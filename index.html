@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>[hidden]{display:none!important} body{margin:0}</style>
-<title>Lokha 365°</title>
+<title>Lokha 365</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <style>
 /* latin-ext */
@@ -341,8 +341,8 @@ body { font-family: var(--display); -webkit-font-smoothing: antialiased; }
 #ring20 .face { fill: #12181d; stroke: rgb(216 183 124 / .4); stroke-width: 1.5; }
 #ring20 text { font-size: 21px; }
 #ring20 .hr { font-family: var(--display); font-weight: 700; font-stretch: 80%; font-size: 58px; letter-spacing: 0; fill: var(--chalk); text-anchor: middle; dominant-baseline: central; }
-#ring20 .deg { font-family: var(--display); font-weight: 800; font-stretch: 62%; font-size: 136px; letter-spacing: -.01em; fill: var(--marigold); text-anchor: middle; dominant-baseline: central; }
-#ring20 .sub { font-size: 17px; letter-spacing: .24em; fill: var(--chalk); text-anchor: middle; }
+#ring20 .yr { font-family: var(--display); font-weight: 800; font-stretch: 62%; font-size: 136px; letter-spacing: -.01em; fill: var(--marigold); text-anchor: middle; dominant-baseline: central; }
+#ring20 .days { font-family: var(--display); font-weight: 700; font-stretch: 85%; font-size: 46px; letter-spacing: .22em; fill: var(--chalk); text-anchor: middle; }
 #ring20 .day { font-size: 21px; letter-spacing: 0; fill: var(--dust); text-anchor: middle; }
 #ring20 .day.now { fill: var(--marigold); font-weight: 500; }
 #ring20 .hands { filter: drop-shadow(0 3px 5px rgb(0 0 0 / .6)); }
@@ -369,6 +369,13 @@ body { font-family: var(--display); -webkit-font-smoothing: antialiased; }
 
 @keyframes slidein { from { opacity: 0; transform: translateY(-30px) scale(.96); } }
 
+/* s10 projects table */
+.pj .r { display: grid; grid-template-columns: 84px 1fr 270px; align-items: baseline; padding: 20px 0 22px; border-bottom: 1px solid rgb(236 234 228 / .2); }
+.pj .r.hd { padding: 0 0 12px; border-bottom-color: rgb(236 234 228 / .5); }
+.pj small { font-family: var(--mono); font-size: 18px; letter-spacing: .14em; text-transform: uppercase; color: var(--dust); }
+.pj i { font-family: var(--display); font-style: normal; font-weight: 800; font-stretch: 75%; font-size: 48px; line-height: 1; color: var(--marigold); }
+.pj b { font-family: var(--display); font-weight: 700; font-stretch: 85%; font-size: 46px; line-height: 1.05; color: var(--chalk); }
+.pj span { font-family: var(--serif); font-style: italic; font-size: 32px; line-height: 1.1; color: var(--chalk); opacity: .8; }
 /* s12 dots */
 .dots circle { fill: var(--chalk); }
 .dots circle.int { fill: var(--marigold); }
@@ -494,7 +501,7 @@ body { font-family: var(--display); -webkit-font-smoothing: antialiased; }
 </style>
 </head><body>
 
-<div id="deck"><div id="frame"><div id="stage" role="region" aria-roledescription="slide deck" aria-label="Lokha 365° deck">
+<div id="deck"><div id="frame"><div id="stage" role="region" aria-roledescription="slide deck" aria-label="Lokha 365 deck">
 
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
   <defs>
@@ -751,14 +758,20 @@ body { font-family: var(--display); -webkit-font-smoothing: antialiased; }
 
 <!-- 10 · 1,000 jobs -->
 <section class="slide" id="s10" data-title="1,000 jobs. Ready to deploy.">
-  <div class="abs rv" style="left:92px;top:200px">
-    <span class="num tx" style="font-size:330px">1,000</span>
-    <span class="hl tx" style="font-size:72px;margin-top:40px;--d:.15">jobs, ready to deploy.</span>
-    <span class="it tx" style="font-size:76px;--d:.3">Only for JNTU students.</span>
+  <div class="abs rv" style="left:92px;top:84px">
+    <span class="num tx" style="font-size:250px">1,000</span>
+    <span class="hl tx" style="font-size:68px;margin-top:30px;--d:.15">jobs, ready to deploy.</span>
+    <span class="it tx" style="font-size:72px;margin-top:12px;--d:.3">Only for JNTU students.</span>
+  </div>
+  <div class="abs pj rv" style="left:92px;top:510px;width:860px">
+    <div class="r hd" style="--d:.45"><small>No.</small><small>Projects we are recruiting for</small><small>Sector</small></div>
+    <div class="r" style="--d:.6"><i>1</i><b>PharmaHub</b><span>Pharma</span></div>
+    <div class="r" style="--d:.75"><i>2</i><b>APTransit OS</b><span>Public transport</span></div>
+    <div class="r" style="--d:.9"><i>3</i><b>Manufacturing Units</b><span>Manufacturing</span></div>
   </div>
   <svg class="abs dots" id="dots" style="left:1040px;top:150px" width="800" height="760" viewBox="0 0 800 760" aria-label="A grid of 1,000 dots, one per role, with intern-track dots highlighted"></svg>
   <div class="abs mono fade" style="left:1040px;top:930px;display:flex;gap:40px;--d:2.4"><span><b style="color:var(--chalk)">●</b> One role</span><span><b style="color:var(--marigold)">●</b> Intern track</span></div>
-  <div class="note">And the work is real. We have around a thousand job opportunities on our own projects, ready to deploy, and they are reserved for JNTU students. Every dot here is a role filled by one of your students. The ones who work hardest, who show up, finish what they start and ask the next question, move onto the intern track and grow with us. The path from your classroom to a real job runs through our projects. One thousand jobs, ready to deploy, only for JNTU students.</div>
+  <div class="note">And the work is real. We have around a thousand job opportunities on our own projects, ready to deploy, and they are reserved for JNTU students. Every dot here is a role filled by one of your students. The ones who work hardest, who show up, finish what they start and ask the next question, move onto the intern track and grow with us. Right now we are recruiting for three projects: PharmaHub, APTransit OS and our manufacturing units. The path from your classroom to a real job runs through our projects. One thousand jobs, ready to deploy, only for JNTU students.</div>
 </section>
 
 <!-- 11 · student offers -->
@@ -935,10 +948,10 @@ body { font-family: var(--display); -webkit-font-smoothing: antialiased; }
 </section>
 
 <!-- 20 · close -->
-<section class="slide" id="s19" data-title="365°. 24/7. We never clock out.">
+<section class="slide" id="s19" data-title="365 days. 24/7. We never clock out.">
   <div class="abs glow"></div>
   <i class="logo lokha-mark" aria-hidden="true"></i>
-  <svg class="abs ring fade" id="ring20" style="left:40px;top:64px;--d:.1" width="880" height="880" viewBox="-480 -480 960 960" aria-label="Live clock with 365° on its face, ringed by 365 day marks"></svg>
+  <svg class="abs ring fade" id="ring20" style="left:40px;top:64px;--d:.1" width="880" height="880" viewBox="-480 -480 960 960" aria-label="Live clock with 365 days on its face, ringed by 365 day marks"></svg>
   <div class="abs rv" style="left:1010px;top:66px;width:850px;text-align:center">
     <span class="mono tx" style="color:var(--dust);--d:.2">24/7 · Every campus · Every day</span>
     <div style="display:flex;justify-content:center;align-items:baseline;gap:26px;margin-top:20px;--d:.3"><span class="hl tx" style="font-size:112px">We never</span><span class="it tx" style="font-size:112px">clock out.</span></div>
@@ -955,7 +968,7 @@ body { font-family: var(--display); -webkit-font-smoothing: antialiased; }
     <i></i>
     <svg role="img" aria-label="JetBrains" height="48" viewBox="0 0 298 64" fill="none"> <defs> <linearGradient id="jbgrad" x1=".850001" x2="62.62" y1="62.72" y2="1.81" gradientUnits="userSpaceOnUse"> <stop stop-color="#FF9419"/> <stop offset=".43" stop-color="#FF021D"/> <stop offset=".99" stop-color="#E600FF"/> </linearGradient> </defs> <path fill="#fff" d="M86.4844 40.5858c0 .8464-.1792 1.5933-.5377 2.2505-.3585.6573-.8564 1.1651-1.5137 1.5236-.6572.3585-1.3941.5378-2.2406.5378H78v6.1044h5.0787c1.912 0 3.6248-.4282 5.1484-1.2846 1.5236-.8564 2.7186-2.0415 3.585-3.5452.8663-1.5037 1.3045-3.1966 1.3045-5.0886V21.0178h-6.6322v19.568Zm17.8556-1.8224h13.891v-5.6065H104.34v-6.3633h15.355v-5.7758H97.8766v29.9743h22.2464v-5.7757H104.34v-6.453Zm17.865-11.8005h8.882v24.0193h6.633V26.9629h8.842v-5.9451h-24.367v5.9551l.01-.01Zm47.022 9.0022c-.517-.2788-1.085-.4879-1.673-.6472.449-.1295.877-.2888 1.275-.488 1.096-.5676 1.962-1.3643 2.579-2.39.618-1.0257.936-2.2007.936-3.5351 0-1.5237-.418-2.8879-1.244-4.0929-.827-1.195-1.992-2.131-3.486-2.8082-1.494-.6672-3.206-1.0058-5.118-1.0058h-13.315v29.9743h13.574c2.011 0 3.804-.3485 5.387-1.0556 1.573-.707 2.798-1.6829 3.675-2.9476.866-1.2547 1.304-2.6887 1.304-4.302 0-1.4837-.338-2.8082-1.026-3.9833-.687-1.175-1.633-2.0812-2.858-2.7285l-.01.0099Zm-13.603-9.9184h5.886c.816 0 1.533.1494 2.161.4382.627.2888 1.115.707 1.464 1.2547.348.5378.527 1.1751.527 1.9021 0 .7269-.179 1.414-.527 1.9817-.349.5676-.837.9958-1.464 1.3045-.628.3087-1.345.4581-2.161.4581h-5.886v-7.3492.0099Zm10.138 18.134c-.378.5676-.916 1.0058-1.603 1.3145-.697.3087-1.484.4581-2.39.4581h-6.145v-7.6878h6.145c.886 0 1.673.1693 2.37.4979.687.3286 1.235.7867 1.613 1.3842.378.5975.578 1.2747.578 2.0414 0 .7668-.19 1.4241-.568 1.9917Zm29.596-5.3077c1.663-.7967 2.947-1.922 3.864-3.3659.916-1.444 1.374-3.117 1.374-5.0289 0-1.912-.448-3.5253-1.344-4.9592-.897-1.434-2.171-2.5394-3.814-3.3261-1.644-.7867-3.546-1.1751-5.717-1.1751h-13.124v29.9743h6.642V40.0779h4.322l6.084 10.9142h7.578l-6.851-11.7208c.339-.1195.677-.249.996-.3983h-.01Zm-2.151-6.1244c-.369.6274-.896 1.1154-1.583 1.444-.688.3386-1.494.5079-2.42.5079h-5.975v-8.2953h5.975c.926 0 1.732.1693 2.42.4979.687.3287 1.214.8166 1.583 1.434.368.6174.558 1.3544.558 2.1908 0 .8365-.19 1.5734-.558 2.2008v.0199Zm20.594-11.7308-10.706 29.9743h6.742l2.121-6.6122h11.114l2.27 6.6122h6.612L220.99 21.0178h-7.189Zm-.339 18.3431 3.445-10.5756.409-1.922.408 1.922 3.685 10.5756h-7.947Zm20.693 11.6312h6.851V21.0178h-6.851v29.9743Zm31.02-9.6993-12.896-20.275h-6.463v29.9743h6.055V30.7172l12.826 20.2749h6.533V21.0178h-6.055v20.275Zm31.528-3.3559c-.647-1.2448-1.564-2.2904-2.729-3.1369-1.165-.8464-2.509-1.4041-4.023-1.6929l-5.098-1.0456c-.797-.1892-1.434-.5178-1.902-.9958-.469-.478-.708-1.0755-.708-1.7825 0-.6473.17-1.205.518-1.683.339-.478.827-.8464 1.444-1.1153.618-.2689 1.335-.3983 2.151-.3983.817 0 1.554.1394 2.181.4182.627.2788 1.115.6672 1.464 1.1751s.528 1.0755.528 1.7228h6.642c-.04-1.7427-.528-3.2863-1.444-4.6207-.916-1.3443-2.201-2.3899-3.834-3.1468-1.633-.7568-3.505-1.1352-5.597-1.1352-2.091 0-3.943.3884-5.566 1.1751-1.623.7867-2.898 1.8721-3.804 3.2663-.906 1.3941-1.364 2.9775-1.364 4.76 0 1.444.288 2.7485.876 3.9036.587 1.1652 1.414 2.1311 2.479 2.8979 1.076.7668 2.311 1.3045 3.725 1.6033l5.397 1.1153c.886.2091 1.584.5975 2.101 1.1551.518.5577.767 1.2448.767 2.0813 0 .6672-.189 1.2747-.567 1.8025-.379.5277-.907.936-1.584 1.2248-.677.2888-1.474.4282-2.39.4282-.916 0-1.782-.1593-2.529-.478-.747-.3186-1.325-.7767-1.733-1.3742-.418-.5875-.617-1.2747-.617-2.0414h-6.642c.029 1.8721.527 3.5152 1.513 4.9492.976 1.424 2.32 2.5394 4.033 3.336 1.713.7967 3.675 1.195 5.886 1.195 2.21 0 4.202-.4083 5.915-1.2249 1.723-.8165 3.057-1.9418 4.023-3.3758.966-1.434 1.444-3.0572 1.444-4.8696 0-1.4838-.329-2.848-.976-4.1028l.02.01Z"/> <path fill="url(#jbgrad)" d="M20.34 3.66 3.66 20.34C1.32 22.68 0 25.86 0 29.18V59c0 2.76 2.24 5 5 5h29.82c3.32 0 6.49-1.32 8.84-3.66l16.68-16.68c2.34-2.34 3.66-5.52 3.66-8.84V5c0-2.76-2.24-5-5-5H29.18c-3.32 0-6.49 1.32-8.84 3.66Z"/> <path fill="#000" d="M48 16H8v40h40V16Z"/> <path fill="#fff" d="M30 47H13v4h17v-4Z"/> </svg>
   </div>
-  <div class="note">So this is our promise. Every angle of a student's growth, across 586 JNTU campuses. Microsoft 365 and JetBrains for every student, the tools the world's companies already run on. The whole Microsoft cloud, with usage analysis and 24-by-7 support. AI agents built for real problems. A thousand jobs reserved for JNTU students. Student offers, hackathons, startup funding, international opportunities, live seminars with professors from abroad, and readiness for the quantum era. With seventy to seventy-five percent of the cost carried by us. Three hundred and sixty-five degrees, three hundred and sixty-five days. And when technology fails at the worst moment, the night before a submission or five minutes before an online exam, your faculty will not wait until Monday. We are there twenty-four hours a day, seven days a week. That clock is running right now, and it never stops. Neither do we. We do not need permission to start. We need partners. Join us. Thank you.</div>
+  <div class="note">So this is our promise. Every part of a student's growth, across 586 JNTU campuses. Microsoft 365 and JetBrains for every student, the tools the world's companies already run on. The whole Microsoft cloud, with usage analysis and 24-by-7 support. AI agents built for real problems. A thousand jobs reserved for JNTU students. Student offers, hackathons, startup funding, international opportunities, live seminars with professors from abroad, and readiness for the quantum era. With seventy to seventy-five percent of the cost carried by us. Three hundred and sixty-five days a year. And when technology fails at the worst moment, the night before a submission or five minutes before an online exam, your faculty will not wait until Monday. We are there twenty-four hours a day, seven days a week. That clock is running right now, and it never stops. Neither do we. We do not need permission to start. We need partners. Join us. Thank you.</div>
 </section>
 
 <div class="chrome"><span style="display:flex;align-items:center;gap:12px"><i class="logo" style="height:28px"></i>Lokha Institution Council</span><span class="hint" id="hint">→ next · N notes · F full screen</span><span id="count">01 / 20</span></div>
@@ -1009,8 +1022,8 @@ body { font-family: var(--display); -webkit-font-smoothing: antialiased; }
     const hh = hand(15, 205, 34, 'var(--chalk)'), mm = hand(9, 305, 44, 'var(--chalk)'), ss = hand(3.5, 345, 76, 'var(--marigold)');
     el('circle', { r: 19, fill: 'var(--marigold)' }, hands);
     el('circle', { r: 7, fill: '#12181d' }, hands);
-    el('text', { x: 0, y: 166, class: 'deg' }, s).textContent = '365°';
-    el('text', { x: 0, y: 248, class: 'sub' }, s).textContent = 'EVERY ANGLE';
+    el('text', { x: 0, y: 160, class: 'yr' }, s).textContent = '365';
+    el('text', { x: 0, y: 248, class: 'days' }, s).textContent = 'DAYS';
     return () => {
       const d = new Date(), sec = d.getSeconds() + (still ? 0 : d.getMilliseconds() / 1000), min = d.getMinutes() + sec / 60, hr = (d.getHours() % 12) + min / 60;
       hh.setAttribute('transform', `rotate(${hr * 30})`); mm.setAttribute('transform', `rotate(${min * 6})`); ss.setAttribute('transform', `rotate(${sec * 6})`);
